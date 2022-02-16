@@ -1,0 +1,43 @@
+.canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}
+.canvas canvas{
+    border: 3px black solid;
+    border-radius: 10px;
+}
+
+.canvas .canvasActions{
+    position: relative;
+}
+
+.canvas .canvasPopup{
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 1005px;
+    height: 905px;
+    background: rgb(209, 209, 255);
+}
+
+.win{
+    text-align: center;
+}
+.win h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgb(15, 59, 255);
+}
+
+.win h3{
+    font-size: 30px;
+}

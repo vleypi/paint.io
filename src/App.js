@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Canvas from './components/Canvas/Canvas';
+import Chat from './components/Chat/Chat'
+import React from 'react';
+import Nickname from './components/Login/Nickname';
+import {Routes, Route, Navigate} from 'react-router-dom'
+import {useAuth} from './hooks/useAuth.js'
+import { useSelector } from 'react-redux';
 
 function App() {
+  useAuth()
+  const profile = useSelector(({profile})=>profile)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' exact element={<Nickname />} />
+        <Route path='/:id' exact element={<Canvas />} />
+      </Routes>
     </div>
   );
 }

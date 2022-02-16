@@ -1,0 +1,30 @@
+.leaders{
+    background: #f2f2ff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    height: 175px;
+    overflow: hidden;
+}
+
+.leaders div{
+    display: flex;
+    margin-top: 6px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.leaders div p{
+    font-weight: 700;
+    color: rgb(0, 100, 214);
+    font-size: 20px;
+}
+
+.leaders div p:nth-child(2){
+    font-size: 25px;
+}

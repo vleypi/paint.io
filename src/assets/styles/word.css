@@ -1,0 +1,48 @@
+.word{
+    background: #f2f2ff;
+    height: 21vh;
+    border-radius: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.word h3{
+    font-size: 30px;
+}
+.word div{
+    display: flex;
+    margin-top: 20px;
+}
+.word div input{
+    width: 160px;
+    font-size: 18px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: #b7c4ff;
+}
+
+.word div button{
+    width: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 0 10px;
+    border: none;
+    cursor: pointer;
+    background: #8b98d4;
+    color: white;
+    font-size: 18px;
+    transition: 0.2s;
+
+}
+
+.word div button:hover{
+    background: #7685c5;
+}
