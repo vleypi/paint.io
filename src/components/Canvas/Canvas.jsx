@@ -36,6 +36,7 @@ const Canvas = () => {
         socket.on('newDrawer', msg=>{
             dispatch(setCanvas('wait', msg))
             dispatch(setNewDrawer(msg))
+            canvasRef.current.clear()
         })
         socket.on('newDrawClient', (msg)=>{
             setStopChange(true)
